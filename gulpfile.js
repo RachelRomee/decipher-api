@@ -1,7 +1,8 @@
 /* GULPFILE
 ------------------------------------------------------- */
 'use strict';
-
+const browserSync = require("browser-sync");
+const reload = browserSync.reload;
 const gulp = require('gulp');
 const concat = require('gulp-concat');	// Concatonate files
 const uglify = require('gulp-uglify');	// Minify files
@@ -57,8 +58,34 @@ gulp.task('watchSass', function() {
 
 /* BUILD TASK
 ------------------------------------------------------- */
-gulp.task('build', ['minifyJS', 'compileSass']);
+gulp.task('build', ['minifyJS', 'watchSass']);
+
+
+
+gulp.task('bs', function() {
+	browserSync({
+4
+		serveStatic: [
+			'static', 'public/dist/images/'
+		],
+		files: [
+			"public/dist/js/scripts.js", "public/dist/style/main.css"
+		],
+		https: true,
+		// open: "external",
+		logPrefix: "test logPrefix",
+		logConnections: true,
+		scrollProportionally: true,
+		open: false,
+		injectChanges: true,
+		ghostMode: {
+			clicks: false,
+			forms: false,
+			scroll: true
+		}
+	});
+})
 
 /* DEFAULT TASK
 ------------------------------------------------------- */
-gulp.task('default', ['build']);
+gulp.task('default', ['build', 'bs']);
