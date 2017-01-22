@@ -39,18 +39,13 @@ var url = "https://v2.decipherinc.com/api/v1/surveys/53c/161202/data?format=json
 // //render the graph here
 // });
 
+request.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7q1rfth1zcs2dpbdu1mfru5q4qkrp7e8v")
+
 // You can add request headers with the #header method:
 // https://github.com/mbostock/d3/wiki/Requests#header
 d3.json(url)
-	.header("Accept-Language", "en-US")
-	.header("X-Requested-With", "XMLHttpRequest")
-	.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7q1rfth1zcs2dpbdu1mfru5q4qkrp7e8v")
-	.user("rachel.van.der.laan@epiphany-rbc.com")
-	.password("prinsengrachT247")
-	// .mimeType("application/json")
   	.get(function(error, data) {
 		{ return JSON.parse(data.responseText); }
-		console.log('d3.json' + data)
   })
 //
 
