@@ -7,8 +7,8 @@ d3.json(url, function(data) {
 	.header("X-Requested-With", "XMLHttpRequest")
 	.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7hja5y719n2a2hysb7p7x2z1728yfz6u1")
 	.user("rachel.van.der.laan@epiphany-rbc.com")
-		.password("prinsengrachT247")
-		.mimeType("application/json")
+	.password("prinsengrachT247")
+	.mimeType("application/json")
 })
 
 // function getData() {

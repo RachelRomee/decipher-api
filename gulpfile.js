@@ -58,33 +58,33 @@ gulp.task('watchSass', function() {
 
 /* BUILD TASK
 ------------------------------------------------------- */
-gulp.task('build', ['minifyJS', 'watchSass']);
+gulp.task('build', ['minifyJS', 'compileSass']);
 
 
 
-gulp.task('bs', function() {
-	browserSync({
-4
-		serveStatic: [
-			'static', 'public/dist/images/'
-		],
-		files: [
-			"public/dist/js/scripts.js", "public/dist/style/main.css"
-		],
-		https: true,
-		// open: "external",
-		logPrefix: "test logPrefix",
-		logConnections: true,
-		scrollProportionally: true,
-		open: false,
-		injectChanges: true,
-		ghostMode: {
-			clicks: false,
-			forms: false,
-			scroll: true
-		}
-	});
-})
+// gulp.task('bs', function() {
+// 	browserSync({
+// 4
+// 		serveStatic: [
+// 			'static', 'public/dist/images/'
+// 		],
+// 		files: [
+// 			"public/dist/js/scripts.js", "public/dist/style/main.css"
+// 		],
+// 		https: true,
+// 		// open: "external",
+// 		logPrefix: "test logPrefix",
+// 		logConnections: true,
+// 		scrollProportionally: true,
+// 		open: false,
+// 		injectChanges: true,
+// 		ghostMode: {
+// 			clicks: false,
+// 			forms: false,
+// 			scroll: true
+// 		}
+// 	});
+// })
 
 /* DEFAULT TASK
 ------------------------------------------------------- */
