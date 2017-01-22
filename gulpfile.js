@@ -58,7 +58,7 @@ gulp.task('watchSass', function() {
 
 /* BUILD TASK
 ------------------------------------------------------- */
-gulp.task('build', ['minifyJS', 'compileSass']);
+gulp.task('build', ['concatJS', 'compileSass']);
 
 
 

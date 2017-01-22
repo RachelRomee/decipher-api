@@ -9,7 +9,11 @@ d3.json(url, function(data) {
 	.user("rachel.van.der.laan@epiphany-rbc.com")
 	.password("prinsengrachT247")
 	.mimeType("application/json")
-})
+
+	console.log(data);
+
+	// test
+});
 
 // function getData() {
 //
@@ -24,7 +28,7 @@ d3.json(url, function(data) {
 // 	.mimeType("application/json")
 // 	.response(function(xhr) { return JSON.parse(xhr.responseText); });
 //
-console.log(data);
+
 
 
 // d3.json("http://something.that.returns.json",function(error,response){
@@ -67,5 +71,7 @@ console.log(data);
 
 	// header "x-apikey: API_KEY_GOES_HERE
 	// spheymbxvegyh0dydw9pgc2hfhx69sn7hja5y719n2a2hysb7p7x2z1728yfz6u1
+
+var test;
 
 //# sourceMappingURL=scripts.js.map
