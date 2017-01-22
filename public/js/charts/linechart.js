@@ -2,31 +2,31 @@
 
 var url = "https://v2.decipherinc.com/api/v1/surveys/53c/161202/data?format=json";
 //
-d3.json(url, function(data) {
-	.header("Accept-Language", "en-US")
-	.header("X-Requested-With", "XMLHttpRequest")
-	.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7hja5y719n2a2hysb7p7x2z1728yfz6u1")
-	.user("rachel.van.der.laan@epiphany-rbc.com")
-	.password("prinsengrachT247")
-	.mimeType("application/json")
-
-	console.log(data);
-
-	// test
-});
+// d3.json(url, function(data) {
+// 	.header("Accept-Language", "en-US")
+// 	.header("X-Requested-With", "XMLHttpRequest")
+// 	.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7hja5y719n2a2hysb7p7x2z1728yfz6u1")
+// 	.user("rachel.van.der.laan@epiphany-rbc.com")
+// 	.password("prinsengrachT247")
+// 	.mimeType("application/json")
+//
+// 	console.log(data);
+//
+// 	// test
+// });
 
 // function getData() {
 //
 // }
 
-// d3.request(url)
-// 	.header("Accept-Language", "en-US")
-// 	.header("X-Requested-With", "XMLHttpRequest")
-// 	.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7q1rfth1zcs2dpbdu1mfru5q4qkrp7e8v")
-// 	.user("rachel.van.der.laan@epiphany-rbc.com")
-// 	.password("prinsengrachT247")
-// 	.mimeType("application/json")
-// 	.response(function(xhr) { return JSON.parse(xhr.responseText); });
+d3.request(url)
+	.header("Accept-Language", "en-US")
+	.header("X-Requested-With", "XMLHttpRequest")
+	.header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7q1rfth1zcs2dpbdu1mfru5q4qkrp7e8v")
+	.user("rachel.van.der.laan@epiphany-rbc.com")
+	.password("prinsengrachT247")
+	.mimeType("application/json")
+	.response(function(xhr) { return JSON.parse(xhr.responseText); });
 //
 
 
