@@ -64,7 +64,6 @@ gulp.task('build', ['concatJS', 'compileSass']);
 
 // gulp.task('bs', function() {
 // 	browserSync({
-// 4
 // 		serveStatic: [
 // 			'static', 'public/dist/images/'
 // 		],
