@@ -29,7 +29,7 @@ d3.json(url)
     .password("prinsengrachT247")
   	.get(function(error, data) {
 		 return JSON.parse(data.responseText);
-  })
+  }) 
 //
 
 // request.get([data][, callback])
