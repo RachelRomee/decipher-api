@@ -28,8 +28,8 @@ var url = "https://v2.decipherinc.com/api/v1/surveys/53c/161202/data?format=json
 
 d3.json(url)
     .header("x-apikey", "spheymbxvegyh0dydw9pgc2hfhx69sn7q1rfth1zcs2dpbdu1mfru5q4qkrp7e8v")
-    .user("rachel.van.der.laan@epiphany-rbc.com")
-    .password("prinsengrachT247")
+    // .user("rachel.van.der.laan@epiphany-rbc.com")
+    // .password("prinsengrachT247")
   	.get(function(error, data) {
 		 return JSON.parse(data.responseText);
   })
