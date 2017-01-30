@@ -11,7 +11,6 @@ var url = "https://v2.decipherinc.com/api/v1/surveys/53c/161202/data?format=json
 // 	.mimeType("application/json")
 // });
 
-
 // d3.request(url)
 // 	.header("Accept-Language", "en-US")
 // 	.header("X-Requested-With", "XMLHttpRequest")
