@@ -87,4 +87,4 @@ gulp.task('build', ['concatJS', 'compileSass']);
 
 /* DEFAULT TASK
 ------------------------------------------------------- */
-gulp.task('default', ['build', 'bs']);
+gulp.task('default', ['build']);
