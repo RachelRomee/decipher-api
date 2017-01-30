@@ -22,7 +22,7 @@ d3.request(url)
 	.response(function(xhr) { return JSON.parse(xhr.responseText); });
 
 	console.log(data);
-
+   
 
 // d3.json("http://something.that.returns.json",function(error,response){
 // //TASK 1
